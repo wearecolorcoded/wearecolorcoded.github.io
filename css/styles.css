@@ -1,0 +1,71 @@
+body {
+  background-color: #f6f6f6;
+  color: #474747; }
+
+header {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 10px;
+  font-family: "Century Gothic"; }
+  header .empty {
+    position: absol	ute;
+    width: 100%;
+    border-bottom: 1px solid #474747;
+    left: 0;
+    right: 0;
+    top: 45px; }
+  header img {
+    width: 8%;
+    margin: 0 auto; }
+  header hr {
+    margin-top: 50px; }
+  header .left {
+    float: left; }
+  header .right {
+    float: right; }
+  header ul {
+    list-style: none;
+    padding: 0;
+    padding-top: 25px; }
+    header ul li {
+      display: inline-block;
+      margin-left: 60px;
+      margin-right: 60px;
+      cursor: pointer; }
+      header ul li:hover {
+        color: #818188; }
+
+.container {
+  width: 80%;
+  padding: 20px;
+  margin: 0 auto;
+  margin-top: 70px; }
+  .container .grid {
+    width: 100%;
+    display: inline-block; }
+    .container .grid div {
+      width: 180px;
+      height: 180px;
+      position: absolute;
+      -webkit-transform: rotate(45deg);
+      background-color: #efefef; }
+    .container .grid #box-1 {
+      top: 130px;
+      left: 562px; }
+      .container .grid #box-1 img {
+        width: 75%;
+        -webkit-transform: rotate(-45deg);
+        margin-top: 25px;
+        margin-left: 25px; }
+    .container .grid #box-2 {
+      top: 276px;
+      left: 412px; }
+    .container .grid #box-3 {
+      top: 276px;
+      left: 709px; }
+    .container .grid #box-4 {
+      top: 412px;
+      left: 564px; }
+
+/*# sourceMappingURL=styles.css.map */
