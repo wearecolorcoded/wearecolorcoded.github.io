@@ -6,35 +6,57 @@
 </head>
 <body>
 	<header>
-		<div class="empty"></div>
-		<img src="./images/logo/logo_draft.png">
-		<div class="left">
+		<img src="./images/logo/logo.svg">
+		<!-- <hr> -->
+		<nav>
 			<ul>
-				<li> ABOUT </li>
-				<li> PORTFOLIO </li>
+				<a href="#about"><li> ABOUT </li></a>
+				<a href="#portfolio"><li> PORTFOLIO </li></a>
+				<a href="#blog"><li> BLOG </li></a>
+				<a href="#contact"><li> CONTACT </li></a>
 			</ul>
-		</div>
-		<div class="right">
-			<ul>
-				<li> BLOG </li>
-				<li> CONTACT </li>
-			</ul>
-		</div>		
+		</nav>		
 	</header>
 	<div class="container">
 		<div class="grid">
-			<div id="box-1">
-				<a href="#mappetize">
-					<!-- <div class="cropper"> -->
+			<div class="box hidden-js">
+				<!-- <a href="#mappetize"> -->
 						<img src="./images/sample_logos/mappetizer.svg">
-					<!-- </div> -->
-				</a>
+				<!-- </a> -->
 			</div>
-			<div id="box-2"></div>
-			<div id="box-3"></div>
-			<div id="box-4"></div>
+			<div class="box hidden-js">
+				<img src="./images/sample_logos/pears.svg">
+			</div>
+			<div class="box hidden-js">
+				<img src="./images/sample_logos/hai.svg">
+			</div>
+			<div class="box hidden-js">
+				<img src="./images/sample_logos/places.svg">
+			</div>
 		</div>
+		<div class="about hidden-js">
+			<p>
+				I am a culturally diverse full stack developer who, thanks to my architectural design experience, has developed a keen eye for detail and an appreciation for beautiful and modern products. I am a supportive and encouraging team player, excited to use my skills and impact my generation with elegant and vibrant solutions.
+			</p>
+		</div>
+		<div class="blog hidden-js">
+			Under Construction ...
+		</div>
+		<div class="contact hidden-js">
+			Pamela Assogba
+			email , twitter, linkedin
+		</div>
+		<div id="proj1"></div>
+		<div id="proj2"></div>
+		<div id="proj3"></div>
+		<div id="proj4"></div>
+
 	</div>
-	<footer></footer>
+	<footer>
+		<p> &#169; Pamela Assogba - 2014 </p>
+	</footer>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+	<script src="./js/script.js"></script>
 </body>
 </html>
