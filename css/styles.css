@@ -93,14 +93,49 @@ header {
       .container .about p span {
         font-size: 30px;
         display: block; }
+  .container .contact {
+    margin-top: 170px; }
+    .container .contact img {
+      margin: 10px; }
   .container .filler {
     width: 100%;
     margin: 200px auto 0px auto;
     color: #ff676a; }
 
 footer {
-  margin: 80%;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  width: 80%;
+  margin: 0 auto;
   text-align: center; }
+  footer p {
+    padding-top: 10px;
+    border-top: 1px solid #ff676a; }
+
+.big-picture {
+  text-align: left;
+  width: 50%;
+  float: left; }
+  .big-picture img {
+    width: 100%;
+    margin: 20px;
+    display: inline-block; }
+
+.description {
+  text-align: left;
+  width: 40%;
+  float: right; }
+  .description span {
+    display: block;
+    margin-bottom: 10px; }
+  .description p {
+    width: 100%;
+    display: inline-block; }
+  .description ul {
+    margin: 0;
+    padding: 0; }
+    .description ul li {
+      list-style: none; }
 
 .hidden {
   display: none; }

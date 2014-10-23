@@ -119,6 +119,12 @@ header{
 			line-height: 2;
 		}
 	}
+	.contact{
+		margin-top: 170px;
+		img{
+			margin: 10px;
+		}
+	}
 	.filler{
 		width: 100%;
 		margin: 200px auto 0px auto;
@@ -127,9 +133,49 @@ header{
 }
 
 footer{
-	margin: 80%;
+	padding-top: 100px;padding-bottom: 100px;
+	width: 80%;
+	margin: 0 auto;
 	text-align: center;
+	p{
+		padding-top: 10px;
+		border-top: 1px solid $accent;
+	}
 }
+
+// details 
+
+.big-picture{
+	text-align: left;
+	width: 50%;
+	float: left;
+	img{
+		width: 100%;
+		margin: 20px;
+		display: inline-block;
+	}
+}
+.description{
+	text-align: left;
+	width: 40%;
+	float: right;
+	span{
+		display: block;
+		margin-bottom: 10px;
+	}
+	p{
+		width: 100%;
+		display: inline-block;
+	}
+	ul{
+		margin: 0;
+		padding: 0;
+		li{
+			list-style: none;
+		}
+	}
+}
+
 
 // for effects
 
