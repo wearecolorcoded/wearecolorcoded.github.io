@@ -28,7 +28,7 @@ header{
 		left: 0; right: 0;
 		top: 45px;
 	}
-	img{
+	#logo{
 		width: 8%;
 		margin: 0 auto;
 	}
@@ -58,12 +58,13 @@ header{
 
 .container{
 	width: 100%;
-	padding: 20px;
+	padding-top: 20px;
 	text-align: center;
-	// margin: 0 auto;
+	overflow: hidden;
 	margin-top: 70px;
 	.grid{
 		width: 100%;
+		margin-top: 30px;
 		display: inline-block;
 		.box{
 			width: 250px;
@@ -100,10 +101,75 @@ header{
 			}
 		}
 	}
+	.about{
+		width: 80%;
+		margin: 160px auto;
+		img{
+			width: 30%;
+			display: inline-block;
+			margin: -100px auto 0px auto;
+		}
+		p{
+			span{
+				font-size: 30px;
+				display: block;
+			}
+			width: 80%;
+			display: inline-block;
+			line-height: 2;
+		}
+	}
+	.filler{
+		width: 100%;
+		margin: 200px auto 0px auto;
+		color: $accent;
+	}
 }
 
 footer{
-	width: 80%;
-	margin: 0 auto;
+	margin: 80%;
 	text-align: center;
 }
+
+// for effects
+
+.hidden{
+	display: none;
+}
+
+#big{
+	stroke: $background-grey;
+	stroke-width: 8;
+	stroke-dasharray: 1540;
+	stroke-dashoffset: 1540;
+	animation: bigPath 10s linear forwards;
+	-webkit-animation: bigPath 3s linear forwards;
+}
+
+#small1,
+#small2{
+	fill: $light-grey;
+}
+
+@keyframes bigPath{
+	from{
+		stroke-dashoffset: 1540;
+	}
+	to{
+		stroke-dashoffset: 0;
+	}
+}
+
+@-webkit-keyframes bigPath{
+	from{
+		stroke-dashoffset: 1540;
+		stroke: $accent;
+		fill: $background-grey;
+	}
+	to{
+		stroke-dashoffset: 0;
+		stroke: $background-grey;
+		fill: $lighter-grey;
+	}
+}
+

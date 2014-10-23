@@ -20,7 +20,7 @@ header {
     left: 0;
     right: 0;
     top: 45px; }
-  header img {
+  header #logo {
     width: 8%;
     margin: 0 auto; }
   header .left {
@@ -41,11 +41,13 @@ header {
 
 .container {
   width: 100%;
-  padding: 20px;
+  padding-top: 20px;
   text-align: center;
+  overflow: hidden;
   margin-top: 70px; }
   .container .grid {
     width: 100%;
+    margin-top: 30px;
     display: inline-block; }
     .container .grid .box {
       width: 250px;
@@ -77,10 +79,57 @@ header {
       .container .grid .box img {
         width: 60%;
         margin-top: 40px; }
+  .container .about {
+    width: 80%;
+    margin: 160px auto; }
+    .container .about img {
+      width: 30%;
+      display: inline-block;
+      margin: -100px auto 0px auto; }
+    .container .about p {
+      width: 80%;
+      display: inline-block;
+      line-height: 2; }
+      .container .about p span {
+        font-size: 30px;
+        display: block; }
+  .container .filler {
+    width: 100%;
+    margin: 200px auto 0px auto;
+    color: #ff676a; }
 
 footer {
-  width: 80%;
-  margin: 0 auto;
+  margin: 80%;
   text-align: center; }
+
+.hidden {
+  display: none; }
+
+#big {
+  stroke: #f6f6f6;
+  stroke-width: 8;
+  stroke-dasharray: 1540;
+  stroke-dashoffset: 1540;
+  animation: bigPath 10s linear forwards;
+  -webkit-animation: bigPath 3s linear forwards; }
+
+#small1,
+#small2 {
+  fill: #818188; }
+
+@keyframes bigPath {
+  from {
+    stroke-dashoffset: 1540; }
+  to {
+    stroke-dashoffset: 0; } }
+@-webkit-keyframes bigPath {
+  from {
+    stroke-dashoffset: 1540;
+    stroke: #ff676a;
+    fill: #f6f6f6; }
+  to {
+    stroke-dashoffset: 0;
+    stroke: #f6f6f6;
+    fill: #efefef; } }
 
 /*# sourceMappingURL=styles.css.map */

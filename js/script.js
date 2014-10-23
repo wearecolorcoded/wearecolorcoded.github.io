@@ -2,15 +2,9 @@ function ready(){
 	console.log('begin')
 	$('.hidden-js').hide()
 	var boxes = $('.box')
+	boxes.fadeIn(2500)
 
-	for(var i = 0; i < boxes.length; i++){
-		box = boxes.eq(i);
-		if (i % 2 === 0) {
-			box.fadeIn(1000);
-		} else {
-			box.fadeIn(2500);
-		}
-	}
+	$('#big').attr('opacity', '0.9')
 }
 
-$(document).ready(ready)
+window.onload = ready;
