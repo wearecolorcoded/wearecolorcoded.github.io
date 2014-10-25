@@ -81,11 +81,11 @@ header {
         margin-top: 40px; }
   .container .about {
     width: 80%;
-    margin: 160px auto; }
+    margin: 0 auto; }
     .container .about img {
-      width: 30%;
+      width: 15%;
       display: inline-block;
-      margin: -100px auto 0px auto; }
+      margin: 0 auto; }
     .container .about p {
       width: 80%;
       display: inline-block;
@@ -94,9 +94,11 @@ header {
         font-size: 30px;
         display: block; }
   .container .contact {
-    margin-top: 170px; }
+    width: 80%;
+    margin: 0 auto; }
     .container .contact img {
-      margin: 10px; }
+      margin: 10px;
+      width: 5%; }
   .container .filler {
     width: 100%;
     margin: 200px auto 0px auto;

@@ -104,11 +104,11 @@ header{
 	}
 	.about{
 		width: 80%;
-		margin: 160px auto;
+		margin: 0 auto;
 		img{
-			width: 30%;
+			width: 15%;
 			display: inline-block;
-			margin: -100px auto 0px auto;
+			margin: 0 auto;
 		}
 		p{
 			span{
@@ -121,9 +121,11 @@ header{
 		}
 	}
 	.contact{
-		margin-top: 170px;
+		width: 80%;
+		margin: 0 auto;
 		img{
 			margin: 10px;
+			width: 5%;
 		}
 	}
 	.filler{
