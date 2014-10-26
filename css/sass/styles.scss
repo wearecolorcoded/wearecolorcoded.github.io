@@ -6,7 +6,8 @@ $lighter-grey: #efefef;
 $background-grey: #f6f6f6;
 
 body{
-	background-color: $background-grey;
+	background: url('../images/stars-2.png') repeat;
+	background-size: 38%;
 	color: $dark-grey;
 	font-family: "Century Gothic";
 	a{
@@ -17,126 +18,59 @@ body{
 		}
 	}
 }
-header{
-	width: 80%;
-	margin: 0 auto;
-	text-align: center;
-	padding-top: 10px;
-	.empty{
-		position: absolute;
-		width: 100%;
-		border-bottom: 1px solid $dark-grey;
-		left: 0; right: 0;
-		top: 45px;
-	}
-	#logo{
-		width: 8%;
-		margin: 0 auto;
-	}
-	.left{
-		float: left;
-	}
-	.right{
-		float: right;
-	}
-	nav{
-		ul{
-			list-style:none;
-			padding: 0;
-			padding-top: 25px;
-			li{
-				display: inline-block;
-				margin-left: 60px;margin-right: 60px;
-				cursor: pointer;
-				&:hover{
-					color: $light-grey;
-				}
-			}
-		}
-	}
-
-}
 
 .container{
-	width: 100%;
+	background: rgba($background-grey, 0.8);
+	border-radius: 1em;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -190px;
+	margin-left: -510px;
+	width: 80%;
 	padding-top: 20px;
 	text-align: center;
-	overflow: hidden;
-	margin-top: 70px;
-	.grid{
-		width: 100%;
-		margin-top: 30px;
-		display: inline-block;
-		.box{
-			width: 250px;
-			height: 250px;
-			margin-right: 20px;
-			background: $lighter-grey;
-			position: relative;
-			display: inline-block;
-			&:before{
-				content: "";
-				position: absolute;
-				top: -8px;
-				left: 0;
-				width: 150px;
-				height: 0;
-				border-left: 50px solid $background-grey;
-				border-right: 50px solid $background-grey;
-				border-bottom: 50px solid $lighter-grey;
-			}
-			&:after{
-				content: "";
-				position: absolute;
-				bottom: 0px;
-				left: 0;
-				width: 150px;
-				height: 0;
-				border-left: 50px solid $background-grey;
-				border-right: 50px solid $background-grey;
-				border-top: 50px solid $lighter-grey;
-			}
-			img{
-				width: 60%;
-				margin-top: 40px;
-			}
-		}
-	}
 	.about{
-		width: 80%;
+		position: relative;
+		width: 40%;
 		margin: 0 auto;
 		img{
-			width: 15%;
+			width: 2em;
 			display: inline-block;
 			margin: 0 auto;
 		}
+		a{
+			color: $accent;
+			font-weight: bolder;
+			&:hover{
+				color: $green-accent;
+			}
+		}
+	}
 		p{
+			display: block;
+			line-height: 2;
 			span{
 				font-size: 30px;
 				display: block;
+				img{
+					width: 40px;
+					-webkit-animation: wave 1.5s linear infinite;
+				}
 			}
-			width: 80%;
-			display: inline-block;
-			line-height: 2;
 		}
-	}
 	.contact{
 		width: 80%;
 		margin: 0 auto;
 		img{
 			margin: 10px;
-			width: 5%;
+			width: 10%;
 		}
-	}
-	.filler{
-		width: 100%;
-		margin: 200px auto 0px auto;
-		color: $accent;
-	}
+	}	
 }
 
 footer{
-	padding-top: 100px;padding-bottom: 100px;
+	// padding-top: 100px;padding-bottom: 100px;
 	width: 80%;
 	margin: 0 auto;
 	text-align: center;
@@ -146,86 +80,20 @@ footer{
 	}
 }
 
-// details 
-
-.big-picture{
-	text-align: left;
-	width: 50%;
-	float: left;
-	img{
-		width: 100%;
-		margin: 20px;
-		display: inline-block;
+@-webkit-keyframes wave{
+	100%{
+		-webkit-transform: rotate(0deg);
+	}
+	20%{
+		-webkit-transform: rotate(-20deg);		
+	}
+	40%{
+		-webkit-transform: rotate(0deg);		
+	}
+	0%{
+		-webkit-transform: rotate(-20deg);		
+	}
+	10%{
+		-webkit-transform: rotate(0deg);
 	}
 }
-.description{
-	// position: fixed;
-	float: right;
-	text-align: left;
-	width: 40%;
-	right: 20px;
-	span{
-		color: $light-grey;
-		font-size: 40px;
-		display: block;
-		margin-bottom: 10px;
-	}
-	p{
-		width: 100%;
-		display: inline-block;
-	}
-	ul{
-		margin: 0;
-		padding: 0;
-		li{
-			list-style: none;
-		}
-	}
-	img{
-		margin-top: 10px;
-		width: 10%;
-	}
-}
-
-// for effects
-
-.hidden{
-	display: none;
-}
-
-#big{
-	stroke: $background-grey;
-	stroke-width: 8;
-	stroke-dasharray: 1540;
-	stroke-dashoffset: 1540;
-	animation: bigPath 10s linear forwards;
-	-webkit-animation: bigPath 3s linear forwards;
-}
-
-#small1,
-#small2{
-	fill: $light-grey;
-}
-
-@keyframes bigPath{
-	from{
-		stroke-dashoffset: 1540;
-	}
-	to{
-		stroke-dashoffset: 0;
-	}
-}
-
-@-webkit-keyframes bigPath{
-	from{
-		stroke-dashoffset: 1540;
-		stroke: $accent;
-		fill: $background-grey;
-	}
-	to{
-		stroke-dashoffset: 0;
-		stroke: $background-grey;
-		fill: $lighter-grey;
-	}
-}
-
