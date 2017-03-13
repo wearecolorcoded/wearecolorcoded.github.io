@@ -133,6 +133,7 @@ ul {
   ul {
     text-align: left;
     li {
+      font-family: "Montserrat";
       font-size: 15px;
       display: block;
       margin-bottom: 10px;
@@ -158,14 +159,15 @@ ul {
   clear:left;
   text-align: center;
   font:13px "Montserrat Light",Helvetica,sans-serif;
+  font-family: "Montserrat Light";
 }
 
-#mc_embed_signup_scroll input{
+input{
   margin: 10px auto;
   display: block;
   max-width: 500px;
 }
-#mc_embed_signup_scroll input[type="submit"] {
+input[type="submit"] {
   background: $melon;
   border: 1px solid transparent;
   border-radius: 2px;
