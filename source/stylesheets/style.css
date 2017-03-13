@@ -4,12 +4,12 @@
 font-family: 'Montserrat Black';
 font-style: normal;
 font-weight: normal;
-src: local('Montserrat Black'), url('../fonts/Montserrat-Black.woff') format('woff');
+src: url('../fonts/Montserrat-Black.woff') format('woff');
 }
 
 @font-face {
 font-family: 'Montserrat Light';
 font-style: normal;
 font-weight: lighter;
-src: local('Montserrat Light'), url('../fonts/montserrat-light.woff') format('woff');
+src: url('../fonts/montserrat-light.woff') format('woff');
 }
