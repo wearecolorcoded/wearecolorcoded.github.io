@@ -1,6 +1,6 @@
 @import 'bootstrap';
 @import "https://fonts.googleapis.com/css?family=Montserrat";
-@import 'style.css';
+@import "style.css";
 @charset "utf-8";
 
 @mixin vendor-prefix($name, $argument) {
@@ -129,7 +129,7 @@ ul {
   margin-top: 50px;
   text-align: left;
   max-width: 500px;
-  p {font-family: "Montserrat-Black"; font-size: 20px;}
+  p {font-family: "Montserrat Black", "Montserrat"; font-size: 20px;}
   ul {
     text-align: left;
     li {
@@ -157,24 +157,23 @@ ul {
   background:#fff;
   clear:left;
   text-align: center;
-  font:13px 'Montserrat Light',Helvetica,sans-serif;
+  font:13px "Montserrat Light",Helvetica,sans-serif;
 }
 
-#mc_embed_signup_scroll {
-  input {
-    margin: 10px auto;
-    display: block;
-    max-width: 500px;
-  }
-  input[type="submit"] {
-    background: $melon;
-    border: 1px solid transparent;
-    border-radius: 2px;
-    padding: 8px;
-    &:hover {
-      background: #fff;
-      border: 1px solid $melon;
-    }
+#mc_embed_signup_scroll input{
+  margin: 10px auto;
+  display: block;
+  max-width: 500px;
+}
+#mc_embed_signup_scroll input[type="submit"] {
+  background: $melon;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  padding: 8px;
+  color: #000;
+  &:hover {
+    background: #fff;
+    border: 1px solid $melon;
   }
 }
 
