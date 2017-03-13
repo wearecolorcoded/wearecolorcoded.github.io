@@ -168,6 +168,10 @@ input{
   max-width: 500px;
 }
 input[type="submit"] {
+  padding: 8px;
+}
+
+#mc_embed_signup_scroll input[type="submit"] {
   background: $melon;
   border: 1px solid transparent;
   border-radius: 2px;
