@@ -129,7 +129,7 @@ ul {
   margin-top: 50px;
   text-align: left;
   max-width: 500px;
-  p {font-family: "Montserrat Black", "Montserrat"; font-size: 20px;; margin-bottom: 15px;}
+  p {font-family: "Montserrat"; font-size: 20px; margin-bottom: 15px;}
   ul {
     text-align: left;
     li {
@@ -142,9 +142,17 @@ ul {
   }
   span {
     text-transform: uppercase;
-    font-family: "Montserrat";
-    font-size: 18px;
-    border-left: 10px solid $melon;
+    font-family: "Montserrat Black";
+    font-size: 20px;
+    display: inline-block;
+    &:after {
+      display:block;
+      content:'';
+      width:100%;
+      height:10px;
+      background: $turquoise;
+      margin-top:-15px;
+    }
   }
   a {
     color: $black;
