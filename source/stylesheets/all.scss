@@ -643,6 +643,15 @@ footer {
 .m-footer__copyright {
   clear: both;
   text-align: center;
+  padding: 20px 0;
+  font-size: 1.5em;
+  a {
+    display: inline-block;
+    &:after {
+      @include highlight(8px, -20px);
+      background: $peach;
+    }
+  }
 }
 
 // HAS HAMBURGER MENU LOGIC
