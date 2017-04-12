@@ -40,12 +40,36 @@ configure :development do
   activate :livereload
 end
 
+activate :blog do |blog|
+  blog.permalink = "{title}.html"
+end
+
 # Methods defined in the helpers block are available in templates
-# helpers do
-#   def some_helper
-#     "Helping"
-#   end
-# end
+helpers do
+  def upcoming_events
+    blog.articles.find_all do |article|
+      !article.metadata[:page]['recap'].present?
+    end
+  end
+
+  def past_events
+    blog.articles.find_all do |article|
+      article.metadata[:page]['recap'].present?
+    end
+  end
+
+  def partnership(article)
+    partnerships = article.metadata[:page]['partner'].split(',')
+    partner_pages = article.metadata[:page]['partner_page'].split(',')
+    pairs = {}
+    partnerships.each_with_index do |partnership, idx|
+      partner = partnerships[idx + 1].present? ? "#{partnership}," : "#{partnership}"
+      pairs[partner] = partner_pages[idx]
+    end
+    pairs
+  end
+
+end
 
 set :relative_links, true
 
@@ -63,7 +87,7 @@ configure :build do
   activate :minify_css
 
   # Minify Javascript on build
-  # activate :minify_javascript
+  activate :minify_javascript
 
   # Enable cache buster
   # activate :asset_hash

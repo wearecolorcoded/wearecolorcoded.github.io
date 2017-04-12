@@ -1,0 +1,20 @@
+---
+title: Black & Creative Summer Kickback
+details:
+partner: LOCLOV
+partner_page: http://loclov.com
+date: 2017-04-09 17:53 UTC
+event_date: June 10th 2017
+timeframe: 3pm-8pm
+location: Loc Lov
+location_address: https://goo.gl/maps/smJcLbDN8Gw
+recap:
+sponsor: mailto:team@wearecolorcoded.us
+register:
+---
+
+<div class="m-content__event">
+  <p> Black creatives summer cookout. <br> Food, games, art, & dope vibes.</p>
+
+  <p class="m-content__event-sponsor"> <a href="mailto:team@wearecolorcoded.us">Sponsor us</a> </p>
+</div>

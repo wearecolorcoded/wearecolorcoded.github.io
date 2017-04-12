@@ -1,0 +1,30 @@
+<header>
+  <nav>
+    <ul>
+      <li>
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+          <input type="hidden" name="cmd" value="_s-xclick">
+          <input type="hidden" name="hosted_button_id" value="6EZLE5874T3LG">
+          <button type="submit" border="0" name="submit"><h2>Donate</h2></button>
+          <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>
+      </li>
+      <li><h2><a href="#events">Events</a></h2></li>
+      <li><h2><a href="#about">About</a></h2></li>
+    </ul>
+  </nav>
+  <div class="col-sm-12 col-md-12 col-lg-12">
+    <div class="col-sm-12 col-md-12 col-lg-12 nav__logo-container">
+      <a href="/"><%= render_partial 'partials/svg/logo.svg' %></a>
+    </div>
+    <h1 class="highlighted"> Educational programming</h1> <br>
+    <h1 class="highlighted">made by and for</h1> <br>
+    <h1 class="highlighted"> people of color</h1>
+    <ul class="nav__social-container">
+      <li><a target="_blank" href="http://instagram.com/wearecolorcoded"><%= render_partial 'partials/svg/insta.svg' %></a></li>
+      <li><a target="_blank" href="http://twitter.com/wearecolorcoded"><%= render_partial 'partials/svg/twitter.svg' %></a></li>
+      <li><a target="_blank" href="http://facebook.com/wearecolorcoded"><%= render_partial 'partials/svg/fb.svg' %></a></li>
+      <li><a href="mailto:team@wearecolorcoded.us"><%= render_partial 'partials/svg/email.svg' %></a></li>
+    </ul>
+  </div>
+</header>

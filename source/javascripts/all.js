@@ -15,3 +15,15 @@ $(function() {
     }
   });
 });
+
+$(document).ready(function() {
+
+  var eventDetails = $('body').find('[data-event-nav]');
+  eventDetails.on('click', function() {
+
+    var $parent = $(this).parents('[data-event-details]');
+
+    $parent.find('[data-event-show]').toggleClass('showing');
+    $parent.find('[data-event-body]').toggleClass('showing');
+  })
+})
