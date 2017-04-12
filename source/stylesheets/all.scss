@@ -56,6 +56,7 @@ $light-grey: #F7F7F7;
   float: none;
   margin: 0 auto;
 }
+.row {margin: 0}
 html { overflow-x: hidden; }
 body {
   font-family: 'Montserrat', 'Georgia', sans-serif;
@@ -271,7 +272,7 @@ $m: ".m-content";
 }
 
 #{$m}__block {
-  margin-bottom: 150px;
+  margin-bottom: 125px;
 }
 
 #{$m}__event-block {
