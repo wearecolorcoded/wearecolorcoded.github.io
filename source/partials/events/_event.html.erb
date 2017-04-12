@@ -18,7 +18,7 @@
     <p class="m-content__event-nav" data-event-nav>More info &#8594;</p>
   </div>
   <div class="m-content__event-lowerhalf" data-event-show>
-    <p> <%= event.metadata[:page]['timeframe'] %> - <%= event.metadata[:page]['event_date'] %>
+    <p> <%= event.metadata[:page]['timeframe'] %> | <%= event.metadata[:page]['event_date'] %>
     <br> @ <a target="_blank" href="<%= event.metadata[:page]['location_address'] %>"> <%= event.metadata[:page]['location'] %> </a> </p>
   </div>
   <div class="m-content__event-link">
