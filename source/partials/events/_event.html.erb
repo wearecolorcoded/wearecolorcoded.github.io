@@ -23,13 +23,13 @@
   </div>
   <div class="m-content__event-link">
     <% if event.metadata[:page]['recap'].present? %>
-      <a target="_blank" href="<%= event.url %>"><p>recap</p></a>
+      <a target="_blank" href="<%= event.metadata[:page]['recap'] %>"><p>recap</p></a>
     <% end %>
     <% if event.metadata[:page]['sponsor'].present? %>
-      <a target="_blank" href="#"><p>sponsor us</p></a>
+      <a target="_blank" href="event.metadata[:page]['sponsor']"><p>sponsor us</p></a>
     <% end %>
     <% if event.metadata[:page]['register'].present? %>
-      <a target="_blank" href="#"><p>register</p></a>
+      <a target="_blank" href="event.metadata[:page]['register']"><p>register</p></a>
     <% end %>
   </div>
 </div>
