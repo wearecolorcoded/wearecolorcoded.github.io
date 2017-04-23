@@ -26,4 +26,9 @@ $(document).ready(function() {
     $parent.find('[data-event-show]').toggleClass('showing');
     $parent.find('[data-event-body]').toggleClass('showing');
   })
+
+
+  $('.nav__hamburger-menu').on('click', function(){
+    $('.m-content').toggleClass('active');
+  });
 })

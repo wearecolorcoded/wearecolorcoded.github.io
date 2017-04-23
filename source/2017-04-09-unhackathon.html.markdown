@@ -9,12 +9,12 @@ timeframe: 10am-4pm
 location: iSL
 location_address: https://goo.gl/maps/Za1iLVCpufo
 recap: https://vimeo.com/195344837
-sponsor:
+tbd:
 register:
 ---
 
 <div class="m-content__event">
-  <p> Creatives of Color got together for a weekend of collaboration, creativity, and self-care.</p>
+  <p> A weekend of stress-free collaboration, creativity, and self-care.</p>
 
   <p class="m-content__event-sponsor"> Sponsored by <a target="_blank" href="http://voxmedia.com">Vox Media</a>, <a target="_blank" href="http://generalassemb.ly">General Assembly</a>, <a href="http://andpizza.com">&pizza</a>, <a href="http://maketto1351.com">Maketto</a></p>
 </div>

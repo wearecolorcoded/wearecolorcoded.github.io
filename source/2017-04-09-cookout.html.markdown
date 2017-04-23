@@ -9,7 +9,7 @@ timeframe: 3pm-8pm
 location: Loc Lov
 location_address: https://goo.gl/maps/smJcLbDN8Gw
 recap:
-sponsor: mailto:team@wearecolorcoded.us
+tbd: yes
 register:
 ---
 

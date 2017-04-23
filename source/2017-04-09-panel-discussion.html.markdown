@@ -1,5 +1,5 @@
 ---
-title: Panel Discussion
+title: Panel
 details: Hiring in Tech | Equitable Practices
 partner: AIGA-DC
 partner_page: http://dc.aiga.org
@@ -9,12 +9,12 @@ timeframe: 7pm
 location: Vox Media
 location_address: https://goo.gl/maps/EXDg1d7NEnk
 recap:
-sponsor:
-register: http://google.com
+tbd:
+register: http://dc.aiga.org/event/colorcoded-equitablepractices/
 ---
 
 <div class="m-content__event">
-  <p> Join us and AIGA-DC as our panelists discuss hiring and creating safe workspaces for poc in tech. </p>
+  <p> Join us and AIGA-DC as our panelists discuss hiring and creating safe workspaces in tech. </p>
 
-  <p class="m-content__event-sponsor"> Sponsored by <a target="_blank" href="http://voxmedia.com">Vox Media</a>, <a target="_blank" href="http://generalassemb.ly">General Assembly</a> </p>
+  <p class="m-content__event-sponsor"> Sponsored by <a target="_blank" href="http://voxmedia.com">Vox Media</a> </p>
 </div>

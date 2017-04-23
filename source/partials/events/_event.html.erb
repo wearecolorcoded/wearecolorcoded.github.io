@@ -3,30 +3,32 @@
     <%= event.body.html_safe %>
     <p class="m-content__event-nav" data-event-nav>&#8592; BACK</p>
   </div>
-  <div class="m-content__event-upperhalf" data-event-show>
-    <h2 class="m-content__event-title"><%= event.title %></h2>
-    <% if event.metadata[:page]['details'].present? %>
-      <p class="m-content__event-details"><%= event.metadata[:page]['details'] %></p>
-    <% end %>
-    <% if event.metadata[:page]['partner'].present? %>
-      <h4 class="m-content__event-partner"> w/
-        <% partnership(event).each do |partner, page| %>
-          <a target="_blank" href="<%= page %>"> <%= partner %> </a>
-        <% end %>
-      </h4>
-    <% end %>
-    <p class="m-content__event-nav" data-event-nav>More info &#8594;</p>
-  </div>
-  <div class="m-content__event-lowerhalf" data-event-show>
-    <p> <%= event.metadata[:page]['timeframe'] %> | <%= event.metadata[:page]['event_date'] %>
-    <br> @ <a target="_blank" href="<%= event.metadata[:page]['location_address'] %>"> <%= event.metadata[:page]['location'] %> </a> </p>
+  <div class="m-content__event-detail" data-event-show>
+    <div class="m-content__event-upperhalf">
+      <h2 class="m-content__event-title"><%= event.title %></h2>
+      <% if event.metadata[:page]['details'].present? %>
+        <p class="m-content__event-details"><%= event.metadata[:page]['details'] %></p>
+      <% end %>
+      <% if event.metadata[:page]['partner'].present? %>
+        <h4 class="m-content__event-partner"> w/
+          <% partnership(event).each do |partner, page| %>
+            <a target="_blank" href="<%= page %>"> <%= partner %> </a>
+          <% end %>
+        </h4>
+      <% end %>
+      <p class="m-content__event-nav" data-event-nav>More info &#8594;</p>
+    </div>
+    <div class="m-content__event-lowerhalf">
+      <p> <%= event.metadata[:page]['timeframe'] %> | <%= event.metadata[:page]['event_date'] %>
+      <br> @ <a target="_blank" href="<%= event.metadata[:page]['location_address'] %>"> <%= event.metadata[:page]['location'] %> </a> </p>
+    </div>
   </div>
   <div class="m-content__event-link">
     <% if event.metadata[:page]['recap'].present? %>
       <a target="_blank" href="<%= event.metadata[:page]['recap'] %>"><p>recap</p></a>
     <% end %>
-    <% if event.metadata[:page]['sponsor'].present? %>
-      <a target="_blank" href="<%= event.metadata[:page]['sponsor'] %>"><p>sponsor us</p></a>
+    <% if event.metadata[:page]['tbd'].present? %>
+      <a target="_blank" href="#"><p>stay tuned</p></a>
     <% end %>
     <% if event.metadata[:page]['register'].present? %>
       <a target="_blank" href="<%= event.metadata[:page]['register'] %>"><p>register</p></a>

@@ -9,7 +9,7 @@ timeframe: 10am-4pm
 location: GA DC
 location_address: https://goo.gl/maps/i7BwbYb2jrn
 recap: https://www.facebook.com/pg/wearecolorcoded/photos/?tab=album&album_id=1290425024334515
-sponsor:
+tbd:
 register:
 ---
 
