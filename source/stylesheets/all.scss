@@ -174,12 +174,17 @@ header {
         }
       }
     }
-    &__menu-items {
+    &__menu-items, button {
       font-family: "Montserrat Black";
       font-size: 25px;
       text-transform: uppercase;
       li {
         margin: 0 20px;
+      }
+      @media (max-width: 1024px) {
+        li {
+          margin: 0 5px;
+        }
       }
       @media (max-width: 800px) {
         display: none;
@@ -300,8 +305,10 @@ $m: ".m-content";
 
 .m-content__index-wrapper {
   margin-bottom: 80px;
-  height: 588px;
-  overflow: hidden;
+  @media (min-width: 1400px) {
+    height: 588px;
+    overflow: hidden;
+  }
 }
 
 #{$m}__index-container {
@@ -309,16 +316,13 @@ $m: ".m-content";
   cursor: pointer;
   img {
     object-fit: cover;
-    position: absolute;
+    position: relative;
     width: 100%;
     opacity: 0.8;
   }
   #{$m}__index-title-container {
     position: absolute;
-    bottom: 60px;
-    @media (max-width: 600px) {
-      bottom: 10px;
-    }
+    bottom: 20px;
   }
   #{$m}__index-title {
     text-align: left;
@@ -335,6 +339,7 @@ $m: ".m-content";
       font-size: 30px;
       &:after {
         @include highlight(23px, -33px);
+        background: rgba(#fff,0.9);
       }
     }
   }
