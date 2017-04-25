@@ -7,7 +7,8 @@ date: 2017-04-09 17:53 UTC
 event_date: Nov 15th-16th 2016
 timeframe: 10am-4pm
 location: iSL
-location_address: https://goo.gl/maps/Za1iLVCpufo
+address: 641 S St NW, Fl 1, Washington, DC 20001
+google_address: https://goo.gl/maps/Za1iLVCpufo
 recap: https://vimeo.com/195344837
 tbd:
 register:

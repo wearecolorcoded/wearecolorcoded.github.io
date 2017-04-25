@@ -7,7 +7,8 @@ date: 2017-04-09 17:53 UTC
 event_date: Feb 18th-19th 2017
 timeframe: 10am-4pm
 location: GA DC
-location_address: https://goo.gl/maps/i7BwbYb2jrn
+address: 1133 15th St NW, Washington, DC 20005
+google_address: https://goo.gl/maps/i7BwbYb2jrn
 recap: https://www.facebook.com/pg/wearecolorcoded/photos/?tab=album&album_id=1290425024334515
 tbd:
 register:

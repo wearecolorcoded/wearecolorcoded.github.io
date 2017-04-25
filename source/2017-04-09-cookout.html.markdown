@@ -7,7 +7,8 @@ date: 2017-04-09 17:53 UTC
 event_date: June 10th 2017
 timeframe: 3pm-8pm
 location: Loc Lov
-location_address: https://goo.gl/maps/smJcLbDN8Gw
+address: 402 8th St NE, Washington, DC 20002
+google_address: https://goo.gl/maps/smJcLbDN8Gw
 recap:
 tbd: yes
 register:

@@ -66,12 +66,44 @@ body {
   &.container-fluid {
     padding: 0;
   }
+  .m-content__index-tagline {display: none;}
 }
 
 .index .__event-body-content {
   width: 100%;
   background: #fff;
   @include clearfix;
+}
+
+.index {
+  .m-content__index-tagline {
+    display: block;
+    margin-top: 60px;
+    &.col-lg-12, &.col-md-12, &.col-sm-12 {padding: 0;}
+    h2 {
+      font-size: 3.5em;
+      margin: 0;
+      width: 100%;
+      transition: all 0.3s ease-out;
+      &.highlighted {
+        &:after {
+          @include highlight(35px, -46px)
+        }
+      }
+    }
+
+    @media (max-width: 900px) {
+      h2 { font-size: 2.5em; }
+      &.highlighted {
+        &:after {
+          @include highlight(35px, -43px)
+        }
+      }
+    }
+    @media (max-width: 900px) {
+      display: none;
+    }
+  }
 }
 
 h1, h2, h3 {
@@ -129,6 +161,14 @@ ul {
   }
 }
 
+.events #events,
+.about #about,
+.merch #merch {
+  &:after {
+    @include highlight(24px, -36px)
+  }
+}
+
 header {
   text-align: center;
   @extend %clearfix;
@@ -150,13 +190,17 @@ header {
         width: 30%;
         margin: 20px;
       }
-      .logo {text-align: left;}
+      .logo_mobile, .logo_desktop {text-align: left;}
+      .logo_desktop {display: block; svg{width: 50%;}}
+      .logo_mobile {display: none;}
       .nav__hamburger-menu {
         display: none;
       }
       @media (max-width: 800px) {
         margin-top: 20px;
         justify-content: space-around;
+        .logo_mobile {display: block;}
+        .logo_desktop {display: none;}
         .nav__hamburger-menu {
           display: block;
           max-width: 100px;
@@ -174,12 +218,34 @@ header {
         }
       }
     }
+    button {
+      background: none;
+      border: none;
+      padding: 0;
+    }
     &__menu-items, button {
       font-family: "Montserrat Black";
       font-size: 25px;
       text-transform: uppercase;
       li {
         margin: 0 20px;
+        transition: all 1s ease-in;
+        &:after {
+          @include highlight(24px, -36px);
+          background: transparent;
+        }
+        &:hover {
+          &:after {
+            background: $turquoise;
+          }
+        }
+      }
+      li:first-child {
+        &:hover {
+          &:after {
+            background: $peach;
+          }
+        }
       }
       @media (max-width: 1024px) {
         li {
@@ -432,7 +498,19 @@ $m: ".m-content";
     font-size: 2.8em;
   }
 
+  #{$m}__event-upperhalf {
+    &-time {
+      font-size: 3.5em;
+      font-weight: medium;
+      font-weight: 500;
+    }
+  }
+
   #{$m}__event-lowerhalf {
+    p {font-size: 2.5em;}
+    &-location {
+      margin-top: 3em;
+    }
     @media (max-width: 600px) {
       margin-bottom: 20px;
     }
@@ -455,9 +533,15 @@ $m: ".m-content";
     @include clearfix;
     p {
       display: inline-block;
+      transition: all 0.4s ease-out;
       &:after {
         @include highlight(20px, -32px);
-        background: $peach;
+        background: rgba($peach, 0.8);
+      }
+      &:hover {
+        &:after {
+          background: rgba($peach, 1);
+        }
       }
     }
     a {
@@ -466,6 +550,14 @@ $m: ".m-content";
     @media (max-width: 600px) {
       margin: 40px auto;
       text-align: center;
+    }
+  }
+
+  #{$m}__event-link-tbd {
+    p {
+      &:after {
+        display: none;
+      }
     }
   }
 

@@ -31,4 +31,5 @@ $(document).ready(function() {
   $('.nav__hamburger-menu').on('click', function(){
     $('.m-content').toggleClass('active');
   });
+
 })

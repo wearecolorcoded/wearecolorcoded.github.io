@@ -1,13 +1,14 @@
 ---
-title: Panel
-details: Hiring in Tech | Equitable Practices
+title: "Panel: Hiring in Tech & Equitable Practices"
+details:
 partner: AIGA-DC
 partner_page: http://dc.aiga.org
 date: 2017-04-09 17:53 UTC
 event_date: Apr 24th 2017
 timeframe: 7pm
 location: Vox Media
-location_address: https://goo.gl/maps/EXDg1d7NEnk
+address: 1201 Connecticut Ave NW, Fl 12, Washington, DC 20036
+google_address: https://goo.gl/maps/EXDg1d7NEnk
 recap:
 tbd:
 register: http://dc.aiga.org/event/colorcoded-equitablepractices/
