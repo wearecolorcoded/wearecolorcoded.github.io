@@ -4,7 +4,7 @@ details:
 partner: AIGA-DC
 partner_page: http://dc.aiga.org
 date: 2017-04-09 17:53 UTC
-event_date: Apr 24th 2017
+event_date: Apr 27th 2017
 timeframe: 7pm
 location: Vox Media
 address: 1201 Connecticut Ave NW, Fl 12, Washington, DC 20036
