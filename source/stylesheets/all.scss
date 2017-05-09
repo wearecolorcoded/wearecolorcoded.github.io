@@ -528,6 +528,7 @@ $m: ".m-content";
   }
 
   #{$m}__event-link {
+    &-tbd {cursor: text}
     font-family: "Montserrat Black";
     margin-top: 40px;
     @include clearfix;

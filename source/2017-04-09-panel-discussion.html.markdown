@@ -11,7 +11,8 @@ address: 1201 Connecticut Ave NW, Fl 12, Washington, DC 20036
 google_address: https://goo.gl/maps/EXDg1d7NEnk
 recap:
 tbd:
-register: http://dc.aiga.org/event/colorcoded-equitablepractices/
+register:
+done: yes
 ---
 
 <div class="m-content__event">

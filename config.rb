@@ -50,13 +50,13 @@ end
 helpers do
   def upcoming_events
     blog.articles.find_all do |article|
-      !article.metadata[:page]['recap'].present?
+      !article.metadata[:page]['recap'].present? && !article.metadata[:page]['done'].present?
     end
   end
 
   def past_events
     blog.articles.find_all do |article|
-      article.metadata[:page]['recap'].present?
+      article.metadata[:page]['recap'].present? || article.metadata[:page]['done'].present?
     end
   end
 
