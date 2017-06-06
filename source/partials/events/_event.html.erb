@@ -10,7 +10,7 @@
         <p class="m-content__event-details"><%= event.metadata[:page]['details'] %></p>
       <% end %>
       <% if event.metadata[:page]['partner'].present? %>
-        <h4 class="m-content__event-partner"> w/
+        <h4 class="m-content__event-partner"> with
           <% partnership(event).each do |partner, page| %>
             <a target="_blank" href="<%= page %>"> <%= partner %> </a>
           <% end %>

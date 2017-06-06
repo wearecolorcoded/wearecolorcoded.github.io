@@ -55,9 +55,10 @@ helpers do
   end
 
   def past_events
-    blog.articles.find_all do |article|
+    articles = blog.articles.find_all do |article|
       article.metadata[:page]['recap'].present? || article.metadata[:page]['done'].present?
     end
+    articles.reverse
   end
 
   def partnership(article)
