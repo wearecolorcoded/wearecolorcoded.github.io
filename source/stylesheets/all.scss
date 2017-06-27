@@ -777,13 +777,13 @@ footer {
 
 .m-footer__inputs {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   padding-top: 30px;
   margin-bottom: 50px;
   input {
-    align-self: flex-end;
-    margin: 0;
+    align-self: center;
+    margin-bottom: 20px;
   }
   input[type="text"] {text-align: left;}
   @media (max-width: 500px) {
@@ -798,14 +798,15 @@ footer {
   }
 }
 
-#mce-EMAIL {
+#mce-EMAIL, #mce-FIRSTNAME {
   border: transparent;
   background: $light-grey;
   border-bottom: 0.3px solid $other-grey;
   padding-left: 3px;
-  display: inline-block;
+  display: block;
   width: 250px;
   font-size: 18px;
+  text-align: center;
 }
 
 #mc-embedded-subscribe,
