@@ -11,7 +11,8 @@ address: 641 S St NW, Fl 1, Washington, DC 20001
 google_address: https://goo.gl/maps/Za1iLVCpufo
 recap:
 tbd:
-register: https://www.eventbrite.com/e/game-day-a-day-to-build-and-play-video-games-tickets-35480732827
+register:
+done: yes
 ---
 
 <div class="m-content__event">
