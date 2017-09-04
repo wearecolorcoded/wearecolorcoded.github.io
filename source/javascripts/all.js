@@ -27,6 +27,13 @@ $(document).ready(function() {
     $parent.find('[data-event-body]').toggleClass('showing');
   })
 
+  $('.m-content__index-carousel').slick({
+    accessibility: true,
+    dots: true,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1,
+  });
 
   $('.nav__hamburger-menu').on('click', function(){
     $('.m-content').toggleClass('active');

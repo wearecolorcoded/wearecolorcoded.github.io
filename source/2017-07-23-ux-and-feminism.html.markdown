@@ -1,5 +1,5 @@
 ---
-title: "Crossroads: Intersectional Feminisnm and UX Design"
+title: "Crossroads: Intersectional Feminism and UX Design"
 details:
 partner:
 partner_page:
@@ -11,7 +11,8 @@ address: 641 S St NW, Fl 1, Washington, DC 20001
 google_address: https://goo.gl/maps/Za1iLVCpufo
 recap:
 tbd:
-register: https://www.eventbrite.com/e/crossroads-intersectional-feminism-and-user-experience-design-tickets-36253727876
+register:
+done: yes
 ---
 
 <div class="m-content__event">

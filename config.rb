@@ -54,6 +54,10 @@ helpers do
     end
   end
 
+  def latest_event
+    upcoming_events.first
+  end
+
   def past_events
     articles = blog.articles.find_all do |article|
       article.metadata[:page]['recap'].present? || article.metadata[:page]['done'].present?

@@ -11,7 +11,8 @@ address: 1320 H St NE, Washington, DC 20002
 google_address: https://goo.gl/maps/qidbphqYFnR2
 recap:
 tbd:
-register: createandcoffee.splashthat.com
+register:
+done: yes
 ---
 
 <div class="m-content__event">
