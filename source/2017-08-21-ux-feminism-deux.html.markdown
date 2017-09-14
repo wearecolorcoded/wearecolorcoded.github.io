@@ -11,7 +11,8 @@ address: 641 S St NW, Fl 1, Washington, DC 20001
 google_address: https://goo.gl/maps/Za1iLVCpufo
 recap:
 tbd:
-register: https://www.eventbrite.com/e/crossroads-intersectional-feminism-and-user-experience-design-tickets-37568829380
+register:
+done: yes
 img: "https://dl.dropboxusercontent.com/s/6l4l5npbl52eggk/web_flyer_2.jpg?dl=0"
 ---
 
