@@ -12,7 +12,8 @@ google_address: https://goo.gl/maps/fVBGuPVhkcM2
 recap:
 type: meetup
 tbd:
-register: https://www.meetup.com/colorcoded/events/243270867/
+register:
+done: yes
 img: "https://dl.dropboxusercontent.com/s/eq75lvncvden0d0/Artboard%201.jpg?dl=0"
 ---
 
