@@ -7,15 +7,15 @@ title: Color Coded
   <% if latest_event.present? %>
     <div class="col-sm-12 col-md-10 col-lg-10 m-content__index-wrapper-main">
       <div class="m-content__index-title-container">
-        <h1 class="m-content__index-title alert">Save The Date!</h1>
+        <h1 class="m-content__index-title alert">New Meetup Alert</h1>
       </div>
       <div class="m-content__index-container">
         <a target="_blank" href="<%= latest_event.metadata[:page]['register'] %>">
-          <img src="<%= latest_event.metadata[:page]['img'] %>">
+          <img src="<%= latest_event.metadata[:page]['img'] %>" style="opacity: 1;">
         </a>
       </div>
       <div class="m-content__index-title-container">
-          <h2 class="m-content__index-subtitle">tickets coming soon </h2>
+          <h2 class="m-content__index-subtitle"> <a target="_blank" href="<%= latest_event.metadata[:page]['register'] %>"> Register</a> </h2>
       </div>
     </div>
   <% end %>

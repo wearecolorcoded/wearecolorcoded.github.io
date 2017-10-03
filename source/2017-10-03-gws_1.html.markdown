@@ -1,0 +1,21 @@
+---
+title: "Golden Wellness"
+details:
+partner:
+partner_page:
+date: 2017-10-03 16:38 UTC
+event_date: Oct 7th 2017
+timeframe: 10am-noon
+location: "A Creative DC: Brookland"
+address: 716 Monroe St NE, Studio 8, Washington, DC, 20017
+google_address: https://goo.gl/maps/9KoVwUroFJp
+recap:
+type: Wellness
+tbd:
+register: https://www.meetup.com/colorcoded/events/243856748/
+img: "https://dl.dropboxusercontent.com/s/holw2d0yswllmaz/gws.jpg?dl=0"
+---
+
+<div class="m-content__event">
+  <p> Your mind matters. Learn how to create mindful routine and ritual in order to cultivate and maintain psychological and spiritual health during our fall Golden Wellness series.  </p>
+</div>
