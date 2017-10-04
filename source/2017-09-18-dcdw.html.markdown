@@ -11,8 +11,8 @@ address: 641 S St NW, Fl 1, Washington, DC 20001
 google_address: https://goo.gl/maps/Za1iLVCpufo
 recap:
 type: Unhackathon
-tbd: yes
-register:
+tbd:
+register: https://www.eventbrite.com/e/dc-design-week-unhackathon-with-ibm-tickets-38208347195?ref=eios&aff=eios
 img: "https://dl.dropboxusercontent.com/s/87s0y5onna94uua/blue2x1.jpg?dl=0"
 ---
 
