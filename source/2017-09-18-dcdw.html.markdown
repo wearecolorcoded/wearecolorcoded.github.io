@@ -4,7 +4,7 @@ details:
 partner:
 partner_page:
 date: 2017-09-18 16:27 UTC
-event_date: Sept 13th 2017
+event_date: Oct 22nd 2017
 timeframe: 830am-5pm
 location: iSL
 address: 641 S St NW, Fl 1, Washington, DC 20001
