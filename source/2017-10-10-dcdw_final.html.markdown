@@ -3,7 +3,7 @@ title: "Unhackathon: Design Thinking w/ IBM and other workshops"
 details:
 partner:
 partner_page:
-date: 2017-09-18 16:27 UTC
+date: 2017-10-10 17:05 UTC
 event_date: Oct 22nd 2017
 timeframe: 830am-5pm
 location: iSL
