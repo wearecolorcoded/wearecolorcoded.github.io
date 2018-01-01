@@ -1,0 +1,46 @@
+button, .button {
+  font-family: "Montserrat-Black";
+  cursor: pointer;
+  text-transform: uppercase;
+  padding: 10px;
+  background: none;
+  font-size: 1.5em;
+  span {background: none;}
+  border: 8px solid $purple;
+  &:hover {
+    background: linear-gradient(-35deg, $turquoise, $purple);
+  }
+  -webkit-animation: button-blink 1s infinite;
+  -moz-animation:    button-blink 1s infinite;
+  animation:         button-blink 1s infinite;
+}
+
+@-webkit-keyframes button-blink {
+  0%   { border-color: $purple; }
+  49% { border-color: $purple; }
+  50% { border-color: $turquoise; }
+  99% { border-color: $turquoise; }
+  100% { border-color: $purple; }
+}
+@-moz-keyframes button-blink {
+  0%   { border-color: $purple; }
+  49% { border-color: $purple; }
+  50% { border-color: $turquoise; }
+  99% { border-color: $turquoise; }
+  100% { border-color: $purple; }
+}
+@keyframes button-blink {
+  0%   { border-color: $purple; }
+  49% { border-color: $purple; }
+  50% { border-color: $turquoise; }
+  99% { border-color: $turquoise; }
+  100% { border-color: $purple; }
+}
+
+.m-component__action-button {
+  font-family: "Montserrat-Black", Helvetica, sans-serif;
+  font-size: 4em;
+  padding: 20px;
+  text-align: center;
+  width: 30%;
+}

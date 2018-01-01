@@ -1,0 +1,30 @@
+.m-form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 80px;
+  &__title {
+    font-size: 2em;
+  }
+
+  &__label {
+    display: block;
+    background: linear-gradient(-35deg, rgba($turquoise, 0.8), rgba($purple, 0.8));
+  }
+
+  &__group {
+    font-size: 2em;
+    margin: 20px auto;
+    input, textarea {
+      border: 3px solid $other-grey;
+      width: 95%;
+      margin: 5px auto;
+      padding: 20px 0;
+    }
+  }
+  &__submit {
+    text-align: center;
+  }
+}

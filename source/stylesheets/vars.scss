@@ -8,6 +8,13 @@ $peach: #FFCFBC;
 $black: #000;
 $light-grey: #F7F7F7;
 
+// for gradient
+$mango: #FFA895;
+$yellow: #FFEF95;
+$green: #97FF95;
+$purple: #FF95EF;
+
+
 @mixin vendor-prefix($name, $argument) {
   -webkit-#{$name}: #{$argument};
      -moz-#{$name}: #{$argument};
@@ -33,10 +40,18 @@ $light-grey: #F7F7F7;
 }
 
 // extends here so I dont need to create a new page
-%clearfix {
+@mixin clearfix {
   &:after {
     content: "";
     display: table;
     clear: both;
   }
+}
+
+@mixin flexbox {
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
+  display:flex;
 }
