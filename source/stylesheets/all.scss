@@ -1,7 +1,63 @@
 @charset "utf-8";
+$pop: #ef6c00;
+$white: #fff;
+$blue: #4ecdc4;
+$turquoise: #A3EFE2;
+$deep-turquoise: #40e0d0;
+$other-grey: #E2DDD9;
+$peach: #FFCFBC;
+$black: #000;
+$light-grey: #F7F7F7;
+
+// for gradient
+$mango: #FFA895;
+$yellow: #FFEF95;
+$green: #97FF95;
+$purple: #FF95EF;
+
+
+@mixin vendor-prefix($name, $argument) {
+  -webkit-#{$name}: #{$argument};
+     -moz-#{$name}: #{$argument};
+      -ms-#{$name}: #{$argument};
+       -o-#{$name}: #{$argument};
+          #{$name}: #{$argument};
+}
+
+@mixin keyframes($name) {
+  @-webkit-keyframes #{$name} { @content };
+  @-moz-keyframes #{$name}    { @content };
+  @-ms-keyframes #{$name}     { @content };
+  @-o-keyframes #{$name}      { @content };
+  @keyframes #{$name}         { @content };
+}
+
+@mixin highlight($height, $margin-top) {
+  display:block;
+  content:'';
+  width:100%;
+  height:#{$height};
+  background: $turquoise;
+}
+
+// extends here so I dont need to create a new page
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin flexbox {
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
+  display:flex;
+}
 @import   "https://fonts.googleapis.com/css?family=Montserrat";
 @import   "font.css";
-@import   "vars.scss";
 @import   "layout.scss";
 @import   "buttons.scss";
 @import   "form.scss"
