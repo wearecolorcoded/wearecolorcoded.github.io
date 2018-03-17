@@ -1,4 +1,6 @@
 @import   "vars.scss";
+@import   "https://fonts.googleapis.com/css?family=Montserrat";
+@import   "font.css";
 
 html { overflow-x: hidden; }
 body {
@@ -120,7 +122,7 @@ header {
   flex-direction: column;
   justify-content: space-around;
   padding: 20px;
-  h4 {font-family: "Montserrat-Black";}
+  h4 {font-family: "Montserrat Black";}
   h2, h3, h4, p {
     font-size: 2em;
   }
@@ -135,7 +137,7 @@ header {
       font-size: 3em;
     }
     h2, h4 {
-      font-family: "Montserrat-Black";
+      font-family: "Montserrat Black";
       background: $white;
       display: inline-block;
     }
@@ -145,7 +147,7 @@ header {
 .m-landing {
   width: 90%;
   margin: 0 auto;
-  font-family: "Montserrat-Black";
+  font-family: "Montserrat Black";
   text-transform: uppercase;
   &__combo {
     flex-wrap: wrap;
@@ -186,7 +188,7 @@ header {
   }
 
   &__combo &__text {
-    font-family: "Montserrat-Black";
+    font-family: "Montserrat Black";
     line-height: 1.5em;
     background: none;
     background: linear-gradient(-35deg, $mango, $yellow, $purple, $pop);
@@ -214,7 +216,7 @@ header {
     text-align: center;
     background: linear-gradient(-35deg, rgba($turquoise, 0.8), rgba($yellow, 0.8), rgba($purple, 0.8));
     font-size:13px;
-    font-family: "Montserrat-Black", Helvetica, sans-serif;
+    font-family: "Montserrat Black", Helvetica, sans-serif;
     padding: 20px;
     width: 70%;
     margin: 0 auto;
@@ -417,7 +419,7 @@ footer {
     align-items: center;
     margin: 0 auto;
     text-align: center;
-    font-family: "Montserrat-Black", Helvetica, sans-serif;
+    font-family: "Montserrat Black", Helvetica, sans-serif;
     flex-wrap: wrap;
     li {
       font-size: 1.8em;
@@ -443,13 +445,13 @@ footer {
 // // PRETTY SH*T
 
 h1, h2, h3, h4 {
-  font-family: "Montserrat-Black", Helvetica, sans-serif;
+  font-family: "Montserrat Black", Helvetica, sans-serif;
   display: block;
   text-transform: uppercase;
 }
 
 header {
-  font-family: "Montserrat-Black";
+  font-family: "Montserrat Black";
   li {font-size: 1.8em; margin: 0; text-transform: uppercase;}
   .logo a {
     &:hover {
@@ -543,7 +545,7 @@ header {
     right: 0;
     li {
       text-transform: uppercase;
-      font-family: "Montserrat-Black", Helvetica;
+      font-family: "Montserrat Black", Helvetica;
       font-size: 2.5em;
       display: block;
       padding:15px 0;
@@ -575,7 +577,7 @@ header {
     border: 1px solid $light-grey;
     &__info {
       padding: 0 20px 0 20px;
-      h4 {font-size: 1.8em;font-family: "Montserrat-Black", Helvetica, sans-serif;}
+      h4 {font-size: 1.8em;font-family: "Montserrat Black", Helvetica, sans-serif;}
       p { font-size: 1.2em; }
     }
   }
@@ -590,7 +592,7 @@ footer {
   padding: 0;
   padding-top: 50px;
   font-size: 10px;
-  font-family: "Montserrat-Black";
+  font-family: "Montserrat Black";
   @include clearfix;
   .m-footer__menu-items {
     margin-top: 10px;
