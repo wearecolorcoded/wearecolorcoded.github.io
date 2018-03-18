@@ -122,7 +122,7 @@ header {
   flex-direction: column;
   justify-content: space-around;
   padding: 20px;
-  h4 {font-family: "Montserrat Black";}
+  h4 {font-family: "Montserrat Black", "Titillium Web", sans-serif;}
   h2, h3, h4, p {
     font-size: 2em;
   }
@@ -137,7 +137,7 @@ header {
       font-size: 3em;
     }
     h2, h4 {
-      font-family: "Montserrat Black";
+      font-family: "Montserrat Black", "Titillium Web", sans-serif;
       background: $white;
       display: inline-block;
     }
@@ -147,7 +147,7 @@ header {
 .m-landing {
   width: 90%;
   margin: 0 auto;
-  font-family: "Montserrat Black";
+  font-family: "Montserrat Black", "Titillium Web", sans-serif;
   text-transform: uppercase;
   &__combo {
     flex-wrap: wrap;
@@ -188,7 +188,7 @@ header {
   }
 
   &__combo &__text {
-    font-family: "Montserrat Black";
+    font-family: "Montserrat Black", "Titillium Web", sans-serif;
     line-height: 1.5em;
     background: none;
     background: linear-gradient(-35deg, $mango, $yellow, $purple, $pop);
@@ -451,7 +451,7 @@ h1, h2, h3, h4 {
 }
 
 header {
-  font-family: "Montserrat Black";
+  font-family: "Montserrat Black", "Titillium Web", sans-serif;
   li {font-size: 1.8em; margin: 0; text-transform: uppercase;}
   .logo a {
     &:hover {
@@ -592,7 +592,7 @@ footer {
   padding: 0;
   padding-top: 50px;
   font-size: 10px;
-  font-family: "Montserrat Black";
+  font-family: "Montserrat Black", "Titillium Web", sans-serif;
   @include clearfix;
   .m-footer__menu-items {
     margin-top: 10px;
