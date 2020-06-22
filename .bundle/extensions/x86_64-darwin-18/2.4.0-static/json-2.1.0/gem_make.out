@@ -1,0 +1,13 @@
+current directory: /Users/pam/Personal/wearecolorcoded.github.io/.bundle/gems/json-2.1.0/ext/json
+/Users/pam/.rbenv/versions/2.4.5/bin/ruby -r ./siteconf20200621-81057-23eb9f.rb extconf.rb
+creating Makefile
+
+current directory: /Users/pam/Personal/wearecolorcoded.github.io/.bundle/gems/json-2.1.0/ext/json
+make "DESTDIR=" clean
+
+current directory: /Users/pam/Personal/wearecolorcoded.github.io/.bundle/gems/json-2.1.0/ext/json
+make "DESTDIR="
+make: Nothing to be done for `all'.
+
+current directory: /Users/pam/Personal/wearecolorcoded.github.io/.bundle/gems/json-2.1.0/ext/json
+make "DESTDIR=" install

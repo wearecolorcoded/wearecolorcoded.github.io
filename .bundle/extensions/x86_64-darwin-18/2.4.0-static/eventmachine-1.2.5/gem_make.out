@@ -1,0 +1,16 @@
+current directory: /Users/pam/Personal/wearecolorcoded.github.io/.bundle/gems/eventmachine-1.2.5/ext/fastfilereader
+/Users/pam/.rbenv/versions/2.4.5/bin/ruby -r ./siteconf20200621-81057-aj0xm8.rb extconf.rb --with-cppflags=-I/usr/local/opt/openssl/include --with-ldflags=-L/usr/local/opt/openssl/lib
+creating Makefile
+
+current directory: /Users/pam/Personal/wearecolorcoded.github.io/.bundle/gems/eventmachine-1.2.5/ext/fastfilereader
+make "DESTDIR=" clean
+
+current directory: /Users/pam/Personal/wearecolorcoded.github.io/.bundle/gems/eventmachine-1.2.5/ext/fastfilereader
+make "DESTDIR="
+compiling mapper.cpp
+compiling rubymain.cpp
+linking shared-object fastfilereaderext.bundle
+
+current directory: /Users/pam/Personal/wearecolorcoded.github.io/.bundle/gems/eventmachine-1.2.5/ext/fastfilereader
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 fastfilereaderext.bundle ./.gem.20200621-81057-nneb40
